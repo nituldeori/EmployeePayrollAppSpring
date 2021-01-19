@@ -20,22 +20,28 @@ public class EmployeePayrollService implements IEmployeePayrollService {
 
     @Override
     public EmployeePayrollData getEmployeePayrollDataById(int empId){
-        return null;
+        EmployeePayrollData empData = null;
+        empData = new EmployeePayrollData(1, new EmployeePayrollDTO("Pankaj", 30000));
+        return empData;
     }
 
     @Override
     public EmployeePayrollData createEmployeePayrollData(EmployeePayrollDTO empPayrollDTO){
-        return null;
+        EmployeePayrollData empData = null;
+        empData = new EmployeePayrollData(1, empPayrollDTO);
+        return empData;
     }
 
     @Override
     public EmployeePayrollData updateEmployeePayrollData(int empId, EmployeePayrollDTO empPayrollDTO){
-        return null;
+        EmployeePayrollData empData = null;
+        empData = new EmployeePayrollData(empId, empPayrollDTO);
+        return empData; 
     }
 
     @Override
     public void deleteEmployeePayrollData(int empId){
-        
+
     }
     
 }
